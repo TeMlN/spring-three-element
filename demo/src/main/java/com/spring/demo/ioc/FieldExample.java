@@ -1,2 +1,7 @@
-package com.spring.demo.ioc;public class FieldExample {
+package com.spring.demo.ioc;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class FieldExample {
 }
