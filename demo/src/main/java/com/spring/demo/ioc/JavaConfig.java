@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JavaConfig {
 
-    @Bean
+//    @Bean
     public ExampleRepository exampleRepository() {
         return new ExampleRepository();
     }
