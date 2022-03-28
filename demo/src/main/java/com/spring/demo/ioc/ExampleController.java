@@ -30,19 +30,19 @@ public class ExampleController {
     private final ApplicationContext applicationContext;
 
     //생성자 주입
-    public ExampleController(ApplicationContext applicationContext/*, ExampleRepository exampleRepository*/) {
-//        this.exampleRepository = exampleRepository;
+    public ExampleController(ApplicationContext applicationContext, ExampleRepository exampleRepository) {
+        this.exampleRepository = exampleRepository;
         this.applicationContext = applicationContext;
     }
 
     //Setter 주입 (생성자 주입을 제외하고는 객체를 선언할때 final 키워드를 사용하지 못함)
-    public void setExampleRepository(ExampleRepository exampleRepository) {
-        this.exampleRepository = exampleRepository;
-    }
+//    public void setExampleRepository(ExampleRepository exampleRepository) {
+//        this.exampleRepository = exampleRepository;
+//    }
 
     //필드 주입
-    @Autowired
-    private FieldExample fieldExample;
+//    @Autowired
+//    private FieldExample fieldExample;
     
     public void findBean() {
         System.out.println("applicationContext.getBean() = " + applicationContext.getBean("exampleRepository", ExampleRepository.class));
