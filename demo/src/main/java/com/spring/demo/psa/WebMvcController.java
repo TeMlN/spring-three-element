@@ -1,5 +1,6 @@
 package com.spring.demo.psa;
 
+import com.spring.demo.aop.LogExecutionTime;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,8 +21,9 @@ public class WebMvcController {
      * 방법은 간단하다 implementation 'org.springframework.boot:spring-boot-starter-web' 의존성을
      * 	implementation 'org.springframework.boot:spring-boot-starter-webflux' 로 갈아끼우면 된다
      * 	그러면 ModelAndView 같이 몇몇 기능들을 제외한 모든 코드는 재사용이 가능해 그대로 netty 기반으로 웹 서버를 구동할 수 있다
-     */
+다    */
     @GetMapping("/")
+    @LogExecutionTime
     public String home() {
         return "hi";
     }
