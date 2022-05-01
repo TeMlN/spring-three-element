@@ -1,6 +1,8 @@
-package com.spring.demo.ioc;
+package com.spring.demo.ioc.example;
+
+import org.springframework.stereotype.Service;
 
 public interface MemberService {
     void signup();
-    void signin();
+    void login();
 }
