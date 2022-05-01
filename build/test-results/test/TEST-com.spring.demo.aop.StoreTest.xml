@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.spring.demo.aop.StoreTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-28T03:21:17" hostname="gimtaemin-ui-MacBookPro.local" time="0.014">
-  <properties/>
-  <testcase name="Cash구현체 사용시 StopWatch가 터지지 않음" classname="com.spring.demo.aop.StoreTest" time="0.014"/>
-  <system-out><![CDATA[200현금결제
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
